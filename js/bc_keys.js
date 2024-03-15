@@ -42,7 +42,7 @@ function findKeyWords() {
    keyWordBox.appendChild(keyWordList);
 
    var keyWordElems = document.querySelectorAll("article#doc dfn");
-   var keyWord = new Array(keyWordElems.length);
+   var keyWords = new Array(keyWordElems.length);
    for (var i = 0; i < keyWordElems.length; i++) {
       keyWords[i] = keyWordElems[i].textContent;
       var linkID = replaceWS(keyWords[i]);
